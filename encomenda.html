@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça sua encomenda</title>
+    <style>
+        @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+* {
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Ubuntu", sans-serif;
+}
+
+body {
+	background-color: #2e2e2e;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #2e2e2e;
+}
+div#parallelogram {
+	background:#ebebeb;
+	width: 1000px;
+	height: 720px;
+	max-width: 70vw;
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px;
+	transform: skew(6deg, 3deg);
+	position: absolute;
+   	z-index: -1;
+}
+section {
+	display: flex;
+    background: #fff;
+	padding: 30px 5px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px;
+	max-width: 70vw;
+}
+section h1 {
+	padding: 40px 10px;
+	text-align: center;
+}
+
+fieldset{
+	border:none;
+}
+
+fieldset:nth-child(2) {
+	display: flex;
+}
+
+fieldset:nth-child(4) {
+	display: flex;
+
+
+	padding-top: 20px;
+}
+
+fieldset:nth-child(5) {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	padding: 0px 10px;
+}
+.container {
+	position: relative;
+}
+
+.container input {
+	margin: 10px 10px;
+	width: calc(100% - 20px);
+	height: 70px;
+	border: none;
+	background-color: #ededed;
+	border-radius: 4px;
+	color: #333;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 14px 10px 0 10px;
+}
+
+.container label {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	color: #9d9d9d;
+	position: absolute;
+	line-height: 70px;
+	top: 10px;
+	left: 20px;
+	user-select: none;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.container input:focus ~ label,
+.container input:valid ~ label {
+	left: 20px;
+	top: -10px;
+	color:#315e8a;
+}
+
+#check {
+	width: 50%;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: flex;
+}
+
+#check input{
+	width: 25px;
+	height: 25px;
+	margin: auto 0;
+}
+
+#check label {
+    margin: auto 10px;
+	color: #555;
+	transition: 0.5s
+}
+#check input:checked ~ label,
+#check input:valid ~ label {
+	color: #315e8a;
+}
+
+button {
+	margin: 40px 0;
+	margin-left: 10px;
+	width: calc(50% - 10px);
+	height: 70px;
+    background-color:#315e8a;
+	color: #fff;
+	font-size: 20px;
+	border:none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: .3s linear;
+}
+
+button:hover {
+	opacity: 0.85;
+}
+form a {
+	text-decoration: none;
+	font-size: 16px;
+	color: #555;
+	font-weight: 500;
+	padding-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+form a:hover {
+	color: #111;
+}
+
+section img {
+	width: 250px;
+	height: 250px;
+	margin: auto 40px;
+}
+
+@media only screen and (max-width: 1080px) {
+	div#parallelogram {
+		height: 690px;
+	}
+
+	section img {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 510px) {
+	div#parallelogram {
+		display: none;
+	}
+
+	section {
+		min-width: 95vw;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	fieldset:nth-child(2),
+	fieldset:nth-child(4),
+	fieldset:nth-child(5) {
+		flex-direction: column;
+	}
+
+	fieldset:nth-child(4) {
+		padding: 0px;
+	}
+
+	div#check {
+		width: 100%;
+	}
+
+	button {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    
+ }
+ .logo{
+    border:2px #333 solid;
+    padding: 10px;
+    font-weight:300;
+    color:#315e8a;
+    letter-spacing:-1px;
+    width: 5em;
+    
+}
+.logo a{
+    text-decoration: none;
+    color:#315e8a;
+}
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+#menu li{
+    margin: 10px;
+    list-style: none;
+    text-transform: uppercase;
+    
+}
+#menu li a{
+    color: #315e8a;
+    text-decoration:none;
+    transition: 1s;
+}
+#menu li a:hover{
+    background: #1f3c58;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #ebebeb;
+    cursor: pointer;
+    margin: 5px 0;
+}
+body{
+	background-image: url(img/pizza1.png);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo"><a href="index.html">Pizzaria LeoNeth</a></h1>
+            <ul id="menu">
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="sobre.html">sobre</a></li>
+                <li><a href="servicos.html">serviços</a></li>
+                <li><a href="contactos.html">contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="parallelogram"></div>
+
+	<section>
+		<form action="" method="POST" oninput="calc_total()">
+			<h1>Faça sua Encomenda</h1>
+			<fieldset>	
+				<div class="container">
+					<input type="text" required name="morada" id="morada">
+					<label>Morada</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="container">
+					<input type="number" required name="tqtd" id="cqtd" min="1" autofocus>
+					<label>Quantidade</label>
+				</div>
+			
+				<div class="container">
+					<input type="text" required name="ttotal" id="ctotal">
+					<label>Preço Total: kz</label readonly>
+				</div>
+				
+			</fieldset>
+
+			<fieldset>
+                <button name="submit">Encomendar</button>
+			</fieldset>
+		</form>
+	</section>
+	<script>
+        function calc_total() {
+            let qtd = parseInt( document.getElementById('cqtd').value)
+            let total = qtd * 1500
+            document.getElementById('ctotal').value = total;
+        }
+    </script>
+</body>
+</html>
