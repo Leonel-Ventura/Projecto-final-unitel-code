@@ -55,17 +55,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2px;
-   
+    margin-bottom: 2px;  
 }
 #conteudo h1{
     color:#315e8a;
     font-size: 2rem;
-    letter-spacing:-1px;
-    
-    
+    letter-spacing:-1px;   
 }
-.button{
+.button1{
     padding: 10px 10px;
     margin-top: 20px;
     border: 2px solid #1f3c58;
@@ -75,6 +72,101 @@
     transition: 1s;
 }
 
+.button1:hover{
+    background-color: #1f3c58;
+    color: white;
+}
+.rodape{
+    border-top: 1px solid #606060;
+    padding-top: 10px;
+    color: #333;
+    text-align: center;
+  }
+  .rodape a{
+    color: #315e8a;
+    text-decoration:none;
+  }
+  /*------------------sobre nós----------------*/
+  h1 ,h2{
+    color:#315e8a; 
+    text-align: center;
+}
+p{
+    margin:20px;
+    font-size:large;
+}
+#conteudo1{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.button{
+    padding: 10px 10px;
+    border: 2px solid #1f3c58;
+    color:#1f3c58;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 1s;
+}
+.second{
+    height: 40px;
+    margin-left: 43%;
+}
+.button:hover{
+    background-color: #1f3c58;
+    color: white;
+}
+/*-------------------serviços-----------------------------*/
+#all{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+p{
+   text-align:center;
+}
+.imgs img{
+   width: 100%;
+   height: 100%;
+}
+
+.yall{
+   background-color: white;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   border: #1f3c58 2px solid;
+   width: 350px;
+}
+.yall1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border: #1f3c58 2px solid;
+    width: 350px;
+ }
+.ymay h1{
+   padding: 10px 0 0 10px;
+   font-size: 1.2em;
+   text-transform: uppercase;
+   padding-bottom: 10px;
+   color:#315e8a;
+}
+.button{
+    padding: 10px 10px;
+    position: absolute;
+    border: 2px solid #1f3c58;
+    color:#1f3c58;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 1s;
+    margin-top: 40px;
+    margin-left: 80px;
+}
 .button:hover{
     background-color: #1f3c58;
     color: white;
@@ -89,3 +181,11 @@
     color: #315e8a;
     text-decoration:none;
   }
+  @media screen and (max-width:400px){
+    img{
+        max-width: 300px;
+    } 
+    .rodape{
+        border: none;
+    }
+}
